@@ -1,0 +1,15 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}500 - خطأ في الخادم{% endblock %}
+
+{% block content %}
+<div class="container text-center py-5">
+    <h1 class="display-1 text-muted">500</h1>
+    <h2 class="mb-4">عذراً، حدث خطأ في الخادم</h2>
+    <p class="lead mb-5">نحن نعمل على حل المشكلة. يرجى المحاولة مرة أخرى لاحقاً.</p>
+    <a href="{% url 'myapp:home' %}" class="btn btn-primary">
+        <i class="bi bi-house-door"></i>
+        العودة للصفحة الرئيسية
+    </a>
+</div>
+{% endblock %}
